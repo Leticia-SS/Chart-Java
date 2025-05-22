@@ -106,7 +106,44 @@ public class Main {
 //        frame.setVisible(true);
 
 
+        // GRÁFICO DE PARABOLA
+//        XYSeries parabola = new XYSeries("y = x²");
+//        for (int x = -10; x <= 10; x++){
+//            parabola.add(x, x*x); // Fazer -(x*x) para mudar abertura da parábola
+//        }                         // Para função constante coloque uma constante, seja em X ou Y
+//
+//        XYSeriesCollection dataset = new XYSeriesCollection();
+//        dataset.addSeries(parabola);
+//
+//        JFreeChart chart = ChartFactory.createXYLineChart("Gráfico de Parabola f(x)=x²",
+//                "X","Y",dataset);
+//
+//        JFrame frame = new JFrame("Gráfico de Parábola");
+//        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+//        frame.add(new ChartPanel(chart));
+//        frame.setSize(500,400);
+//        frame.setLocationRelativeTo(null);
+//        frame.setVisible(true);
 
+
+        //GRÁFICO SENO E COSSENO
+//        XYSeries parabola = new XYSeries("Seno");
+//        for (double x = -10; x <= 10; x+=0.1){
+//            parabola.add(x, Math.sin(x)); // Para cosseno Math.cos(x)
+//        }
+//
+//        XYSeriesCollection dataset = new XYSeriesCollection();
+//        dataset.addSeries(parabola);
+//
+//        JFreeChart chart = ChartFactory.createXYLineChart("Gráfico Seno",
+//                "X","Y",dataset);
+//
+//        JFrame frame = new JFrame("Gráfico Seno");
+//        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+//        frame.add(new ChartPanel(chart));
+//        frame.setSize(600,600);
+//        frame.setLocationRelativeTo(null);
+//        frame.setVisible(true);
 
 
 
