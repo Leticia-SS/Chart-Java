@@ -146,6 +146,46 @@ public class Main {
 //        frame.setVisible(true);
 
 
+        // FUNÇÃO SIGMOIDE OU LOGÍSTICA
+//        XYSeries parabola = new XYSeries("Sigmoide");
+//        for (double x = -10; x <= 10; x+=0.1){
+//            parabola.add(x, 1/(1+Math.pow(Math.E,-x)));
+//        }
+//
+//        XYSeriesCollection dataset = new XYSeriesCollection();
+//        dataset.addSeries(parabola);
+//
+//        JFreeChart chart = ChartFactory.createXYLineChart("Gráfico Sigmoide",
+//                "X","Y",dataset);
+//
+//        JFrame frame = new JFrame("Gráfico Sigmoid");
+//        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+//        frame.add(new ChartPanel(chart));
+//        frame.setSize(600,600);
+//        frame.setLocationRelativeTo(null);
+//        frame.setVisible(true);
+
+
+
+        // FUNÇÃO GAUSSIANA
+        XYSeries parabola = new XYSeries("Gaussiana");
+        for (double x = -10; x <= 10; x+=0.1){
+            parabola.add(x, Math.pow(Math.E,-Math.pow(x,2)/2));
+        }
+
+        XYSeriesCollection dataset = new XYSeriesCollection();
+        dataset.addSeries(parabola);
+
+        JFreeChart chart = ChartFactory.createXYLineChart("Gráfico Gaussiana",
+                "X","Y",dataset);
+
+        JFrame frame = new JFrame("Gráfico Guassiana");
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        frame.add(new ChartPanel(chart));
+        frame.setSize(600,600);
+        frame.setLocationRelativeTo(null);
+        frame.setVisible(true);
+
 
     }
 }
